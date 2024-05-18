@@ -1,0 +1,47 @@
+# Rock-Paper-Scissors Game
+
+This is a simple C program that simulates a game of Rock-Paper-Scissors between the computer and the user. The computer randomly chooses Rock, Paper, or Scissors, and the user inputs their choice. The program then determines the winner and displays the result.
+
+
+## How to Play
+
+1. When prompted, enter your choice:
+   - `r` for Rock
+   - `p` for Paper
+   - `s` for Scissors
+
+2. The computer will randomly select its choice.
+
+3. The program will display who wins:
+   - "Game Draws!!" if both choices are the same.
+   - "You Win!!" if your choice beats the computer's choice.
+   - "You Lose!!" if the computer's choice beats yours.
+
+4. The program will also display what both the computer and you played.
+
+## Code Explanation
+
+- **Function `WhoWins(char com, char u)`**: 
+  - This function takes the computer's choice (`com`) and the user's choice (`u`) as inputs.
+  - It returns:
+    - `0` if the game is a draw.
+    - `1` if the user wins.
+    - `-1` if the user loses.
+
+- **Function `main()`**:
+  - Initializes the random number generator.
+  - Generates a random number to determine the computer's choice (`r`, `p`, or `s`).
+  - Prompts the user to enter their choice.
+  - Calls the `WhoWins` function to determine the result.
+  - Displays the outcome of the game and the choices made by both the computer and the user.
+
+## Example Output
+
+```
+Enter r for Rock p for Paper and s for Scissor
+r
+Game Draws!!
+Computer played r
+You played r
+```
+
