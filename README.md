@@ -1,6 +1,5 @@
-<h1>
 # Rock-Paper-Scissors Game
-</h1>
+
 This is a simple C program that simulates a game of Rock-Paper-Scissors between the computer and the user. The computer randomly chooses Rock, Paper, or Scissors, and the user inputs their choice. The program then determines the winner and displays the result.
 
 ## How to Play
