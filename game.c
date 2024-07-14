@@ -23,7 +23,7 @@ int WhoWins(char com,char u)
 int main()
 {
      char comp,you;
-     while(you!='e)
+     while(you!='e')
           {
                srand(time(0));
                int num=rand()%100+1;
