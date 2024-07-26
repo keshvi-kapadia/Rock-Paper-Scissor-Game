@@ -24,25 +24,33 @@ int main()
 {
      char comp,you;
 
-     srand(time(0));
-     int num=rand()%100+1;
+     do
+     {
+          srand(time(0));
+          int num=rand()%100+1;
 
-     if(num<33)
-     comp='r';
-     else if(num>33 && num<66)
-     comp='p';
-     else comp='s';
+          if(num<33)
+          comp='r';
+          else if(num>33 && num<66)
+          comp='p';
+          else comp='s';
 
-     printf("Enter r for Rock p for Paper and s for Scissor\n");
-     scanf("%c",&you);
-     int result=WhoWins(comp,you);
-     if(result==0)
-     printf("Game Draws!!\n");
-     else if(result==1)
-     printf("You Wins!!\n");
-     else
-     printf("You Lose!!\n");
+          printf("Enter r for Rock p for Paper and s for Scissor And e for Exit\n");
+          scanf("%s",&you);
+          if(you=='e')
+          {
+               printf("Game Ended!!");
+               break;
+          }
+          int result=WhoWins(comp,you);
+          if(result==0)
+          printf("Game Draws!!\n");
+          else if(result==1)
+          printf("You Wins!!\n");
+          else
+          printf("You Lose!!\n");
 
-     printf("Computer played %c \nYou played %c\n",comp,you);
+          printf("Computer played %c \nYou played %c\n",comp,you);
+     }while(you!='e');
      return 0;
 }
